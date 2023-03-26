@@ -1,5 +1,7 @@
 # Alpha Clock Five NTP Client
 
+For use with the [Alpha Clock Five](https://shop.evilmadscientist.com/tinykitlist/589) from [Evil Mad Scientist Laboratories](https://www.evilmadscientist.com/).
+
 When installed on an ESP8266, this firmware will attach to a configured WiFi network, request the current time via NTP, and send updates to the Alpha Clock Five through its serial update protocol keeping the clock's time as accurate as possible.
 
 After the first boot, the AC5 will display **"SETUP"** and the NTP client device will present an access point called **"AC5_NTP_SETUP"**. Using a mobile device, attach to that AP, and you will be taken to the WiFi configuration page. Select your WiFi network and configure the password. If successful, the clock will display **"WIFI"** then **"CONN"** signifying the connection was complete. Within 60 seconds, your clock should be updated with the current NTP time for your configured timezone.
